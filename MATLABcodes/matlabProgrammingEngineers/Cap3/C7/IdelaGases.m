@@ -1,0 +1,51 @@
+%% FREDERICO CASARA ANTONIAZZI
+%  CODE FOR PLOT THE PRESSURE VERSUS VOLUME OF IDEAL GASES
+%  NINTH CODE IN PROGRAMMING WITH MATLAB OF CHAPMAN SECOND EDITION
+
+%% INITIAL DEFINITIONS:
+
+clear
+close all
+clc
+
+format short
+
+%% PURPOSE OF THE CODE:
+
+% THIS PROGRAM PLOTS THE PRESSURE VERSUS VOLUMES OF A IDEAL GAS.
+
+% VARIABLES:
+%   n -> NUMBER OF ATOMS (mol)
+%   P -> PRESSURE (kPa)
+%   R -> IDEAL GAS CONSTANT (L kPa / mol K)
+%   T -> TEMPERATURE (K)
+%   V -> VOLUME (L)
+
+%% MAIN CODE:
+
+n = 1;         % MOLES OF ATOMS
+R = 8.314;     % IDEAL GAS CONSTANT
+T = [273 373]; % TEMPERATURE IN KELVINS
+
+% ARRAY OF INPUT PRESSURES
+P = 1:0.1:1000;
+
+% CALCULATIONG THE VOLUMES
+V = (n*R*T(1))./P;
+
+% PLOTTING THE RESULT:
+figure(1)
+loglog(P, V, 'r-', 'LineWidth', 2);
+title('\bfVOLUME vs PRESSURE IN A IDEAL GAS');
+xlabel('\bfPRESSURE (kPa)');
+ylabel('\bfVOLUME (L)');
+grid on;
+hold on;
+
+% CALCULATIONG THE VOLUMES
+V = (n*R*T(2))./P;
+
+figure(1)
+loglog(P, V, 'b--', 'LineWidth', 2);
+legend('T = 273 K', 'T = 373 K');
+hold off;
