@@ -1,0 +1,21 @@
+% EXAMPLE OF LINEAR REGRESSION
+x = [10 15 20 20 25 25 23 30]';
+y = [160 171 182 181 188 193 190 200]';
+
+% FOR MORE WAYS TO MAKE THE LINEAR REGRESSION:
+%   'poly1' -> 1ª ORDER POLYNOMIAL
+%   'poly2' -> 2ª ORDER POLYNOMIAL
+%   'poly3' -> 3ª ORDER POLYNOMIAL
+%   'poly4' -> 4ª ORDER POLYNOMIAL
+%   'poly5' -> 5ª ORDER POLYNOMIAL
+
+% FOR THE NONLINEAR REGRESSION:
+%   'sin1' -> ONE SINE APPROXIMATION
+%   'sin2' -> TWO SINE APPROXIMATION
+%   'exp1' -> EXPONETIAL APPROXIMATION
+%   ''
+
+xyfit = fit(x,y,"poly1");
+
+xyfit.CoefficientName
+a = xyfit.p1;
