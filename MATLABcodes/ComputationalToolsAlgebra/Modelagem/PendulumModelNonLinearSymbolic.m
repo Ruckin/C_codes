@@ -1,0 +1,23 @@
+%% FREDERICO CASARA ANTONIAZZI - 12/04/2023
+%  CODE FOR OBTAIN THE NONLINEAR MODEL OF A SWINGING PENDULUM ANALYTICALLY
+%  USING THE EULER-LAGRANGE EQUATIONS.
+
+%% IINITIAL DEFINITIONS:
+
+clc;
+clear;
+close all;
+
+format long;
+
+%% MAIN CODE FOR OBTAIN THE MODEL:
+
+syms m l g theta theta_dot
+
+x = l*sin(theta);
+y = l*cos(theta);
+
+
+
+
+
