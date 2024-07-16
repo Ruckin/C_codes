@@ -1,4 +1,4 @@
-# C_codes
+# codes
 Repository dedicated to save codes developed in different languages.
 
 The codes developed in here have the focus to be useful funcs and basics for learning material mainlly in control systems theory.
