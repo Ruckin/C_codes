@@ -1,0 +1,43 @@
+|BlinkingLED
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => prescaler[0].CLK
+clk => prescaler[1].CLK
+clk => prescaler[2].CLK
+clk => prescaler[3].CLK
+clk => prescaler[4].CLK
+clk => prescaler[5].CLK
+clk => prescaler[6].CLK
+clk => prescaler[7].CLK
+clk => prescaler[8].CLK
+clk => prescaler[9].CLK
+clk => prescaler[10].CLK
+clk => prescaler[11].CLK
+clk => prescaler[12].CLK
+clk => prescaler[13].CLK
+clk => prescaler[14].CLK
+clk => prescaler[15].CLK
+clk => prescaler[16].CLK
+clk => prescaler[17].CLK
+clk => prescaler[18].CLK
+clk => prescaler[19].CLK
+clk => prescaler[20].CLK
+clk => prescaler[21].CLK
+clk => prescaler[22].CLK
+clk => prescaler[23].CLK
+OutLED[0] <= counter[0].DB_MAX_OUTPUT_PORT_TYPE
+OutLED[1] <= counter[1].DB_MAX_OUTPUT_PORT_TYPE
+OutLED[2] <= counter[2].DB_MAX_OUTPUT_PORT_TYPE
+OutLED[3] <= counter[3].DB_MAX_OUTPUT_PORT_TYPE
+OutLED[4] <= counter[4].DB_MAX_OUTPUT_PORT_TYPE
+OutLED[5] <= counter[5].DB_MAX_OUTPUT_PORT_TYPE
+OutLED[6] <= counter[6].DB_MAX_OUTPUT_PORT_TYPE
+OutLED[7] <= counter[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

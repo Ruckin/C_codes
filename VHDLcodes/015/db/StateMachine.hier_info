@@ -1,0 +1,9 @@
+|StateMachine
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+rst => Q[0]~reg0.ACLR
+rst => Q[1]~reg0.ACLR
+Q[0] <> Q[0]~reg0
+Q[1] <> Q[1]~reg0
+
+

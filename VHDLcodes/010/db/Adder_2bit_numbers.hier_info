@@ -1,0 +1,10 @@
+|Adder_2bit_numbers
+input_1[0] => Add0.IN2
+input_1[1] => Add0.IN1
+input_2[0] => Add0.IN4
+input_2[1] => Add0.IN3
+sumResult[0] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+sumResult[1] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+sumResult[2] << Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+

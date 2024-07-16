@@ -1,0 +1,30 @@
+-- 010 VHDL CODE
+-- FREDERICO ANTONIAZZI - 28/06/2024
+--
+-- SIMPLE IMPLEMENTATION OF A 2 BITS ADDER CIRCUIT
+--
+
+-- LOADING THE LIBRARY
+library IEEE;
+use IEEE.std_logic_1164.all; -- USE THE LIBRARY
+
+-- CREATING THE ENTITY
+entity Adder_2bit_numbers is port
+(
+
+input_1, input_2 : in std_logic_vector(1 downto 0); -- VECOTR INPUTS WITH TWO POSITIONS
+
+sumResult : out std_logic_vector(2 downto 0) -- OUTPUT VECTOR WITH TRHEE POSITIONS
+
+);
+end Adder_2bit_numbers; -- ENDING THE ENTITY
+
+-- CREATING THE ARCHITECTURE FOR THIS IMPLEMENTATION
+architecture Hardware of Adder_2bit_numbers is
+begin
+
+-- SIDE NOTE: MUST BE CARFULL WHEN SUMMING TWO NUMBERS IN BINARY BECAUSE ONE HAS THE CARRY SO THE ('0' & ...),
+-- INDICATE A CONCATENATION OF A TWO BITS NUMBER WITH ONE MORE BITS LIKE THE MSB.
+sumResult <= ('0' & input_1) + ('0' & input_2); -- CALCULATING THE SUM BETWEEN TWO NUMBERS OF 2 BITS
+
+end Hardware; -- ENDING THE ARCHITECTURE

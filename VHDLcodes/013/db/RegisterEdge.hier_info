@@ -1,0 +1,18 @@
+|RegisterEdge
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+rst => Q.OUTPUTSELECT
+rst => Q.OUTPUTSELECT
+rst => Q.OUTPUTSELECT
+set => Q.OUTPUTSELECT
+set => Q.OUTPUTSELECT
+set => Q.OUTPUTSELECT
+data[0] => Q.DATAA
+data[1] => Q.DATAA
+data[2] => Q.DATAA
+Q[0] << Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] << Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] << Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

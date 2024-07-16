@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sumResult[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sumResult[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sumResult[2]",
+					"strict" : false
+				},
+				{
+					"name" : "input_1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "input_1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "input_2[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

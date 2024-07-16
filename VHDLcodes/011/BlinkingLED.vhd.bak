@@ -1,0 +1,46 @@
+-- 011 VHDL CODE
+-- FREDERICO ANTONIAZZI - 28/06/2024
+--
+-- IMPLEMENTATION OF BLINKING ROUTINE FOR LED
+--
+
+-- LOADING THE LIBRARY
+library IEEE;
+use IEEE.std_logic_1164.all; -- USE THE LOGIC LIBRARY
+
+-- CREATING THE ENTITY
+entity BlinkingLED is port
+(
+
+clk : in std_logic; -- CLOCK INPUT
+
+OutLED : out integer range 0 to 255 -- VECTOR OUTPUT WITH 8 BITS
+
+);
+end BlinkingLED; -- ENDING THE ENTITY
+
+-- CREATING THE ARCHITECTURE THAT IMPLEMENTS THIS PROCESS
+architecture Hardware of BlinkingLED is
+begin
+	process(clk)
+	
+		variable counter :  integer range 0 to 255;     --
+		variable prescale : integer range 0 to 9999999; --
+	
+		begin
+		
+			if(clk = '1') then
+			
+				prescale := prescale + 1;
+				
+				if(prescale = 0) then
+				
+					counter := 255 - counter; -- ALWAYS INVERT COUNTER FROM 255(HIGH/POWER ON) TO 0(LOW/POWER OFF)
+					
+				end if;
+			end if;
+			
+			OutLED <= counter; -- BLINKING LED IN THE OUTPUT
+	
+	end process;
+end Hardware; -- ENDING ARCHITECTURE

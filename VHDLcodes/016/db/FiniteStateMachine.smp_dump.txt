@@ -1,0 +1,7 @@
+
+State Machine - |FiniteStateMachine|state
+Name state.case_3 state.case_1 state.case_2 state.case_0 
+state.case_0 0 0 0 0 
+state.case_2 0 0 1 1 
+state.case_1 0 1 0 1 
+state.case_3 1 0 0 1 

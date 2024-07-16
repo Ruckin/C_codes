@@ -1,0 +1,14 @@
+|Display7Seg
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+dis7bar[0] << Mux6.DB_MAX_OUTPUT_PORT_TYPE
+dis7bar[1] << Mux5.DB_MAX_OUTPUT_PORT_TYPE
+dis7bar[2] << Mux4.DB_MAX_OUTPUT_PORT_TYPE
+dis7bar[3] << Mux3.DB_MAX_OUTPUT_PORT_TYPE
+dis7bar[4] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+dis7bar[5] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+dis7bar[6] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
