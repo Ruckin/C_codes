@@ -40,4 +40,4 @@ begin
 		
 			end if;
 	end process;
-end hardware; -- ENDING THE ARCHITECTURE
+end Hardware; -- ENDING THE ARCHITECTURE
